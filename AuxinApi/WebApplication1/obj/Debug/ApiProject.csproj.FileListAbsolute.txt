@@ -1,0 +1,4 @@
+D:\3.KSDB\API\FMSApi\WebApplication1\obj\Debug\ApiProject.csprojAssemblyReference.cache
+D:\3.KSDB\API\FMSApi\WebApplication1\obj\Debug\ApiProject.csproj.CoreCompileInputs.cache
+D:\3.KSDB\API\FMSApi\WebApplication1\obj\Debug\WebApplication1.dll
+D:\3.KSDB\API\FMSApi\WebApplication1\obj\Debug\WebApplication1.pdb

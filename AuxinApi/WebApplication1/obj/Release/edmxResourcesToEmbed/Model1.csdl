@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MyEmails" EntityType="DbModel.MyEmails" />
+  </EntityContainer>
+  <ComplexType Name="WIZ_SP_TRACES_Result">
+    <Property Type="String" Name="MobileNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="T" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="CreatedAt" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="WIZ_SP_USER_TRACE_Result">
+    <Property Type="String" Name="MobileNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MobileNo1" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="WIZ_SP_USER_TRACE1_Result">
+    <Property Type="String" Name="Source" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Target" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="MyEmails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EmailId" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsRead" Type="Boolean" />
+    <Property Name="CreatedAt" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+</Schema>
